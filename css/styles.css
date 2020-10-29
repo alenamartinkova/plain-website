@@ -40,6 +40,12 @@ h1 {
     line-height: 60px;
 }
 
+h3 {
+    font-family: 'Kanit', sans-serif;
+    font-size: 23px;
+    margin-bottom: 0px;
+}
+
 button {
     padding: 5px 25px;
     border: none;
@@ -48,15 +54,20 @@ button {
     font-weight: bold;
 }
 
+.row {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 /* HEADER ELEMENTS */
 .logo-header {
     padding: 30px;
-    max-width: 160px;
+    max-width: 180px;
 }
 
 /* NAVIGATION */
 .nav-items-wrapper {
-    margin-right: 50px;
+    margin: 0 50px 0 0;
 }
 
 .nav-item {
@@ -76,4 +87,79 @@ button {
 .section-first-content-text {
     padding: 20px 0;
     max-width: 300px;
+}
+
+.round-image {
+    max-width: 50px;
+    border-radius: 26px;
+    margin-right: 10px;
+}
+
+.section-second-content-title, .section-second-content-title-image {
+    display: inline-block;
+}
+
+.section-second-content-title-wrapper {
+    align-items: center;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.black-and-white-image {
+    filter: grayscale(1);
+}
+
+.black-and-white-image:hover {
+    filter: none;
+}
+
+.big-image {
+    width: 250px;
+}
+
+.small-image {
+    border: 1px solid #eeeeee;
+    max-width: 150px;
+}
+
+.images-row {
+    margin-top: 80px;
+}
+
+.sponsors-row {
+    margin-top: 80px;
+}
+
+.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: center;
+}
+
+.col-xs-15 {
+    width: 20%;
+    float: left;
+}
+@media (min-width: 768px) {
+    .col-sm-15 {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-15 {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 1200px) {
+    .col-lg-15 {
+        width: 20%;
+        float: left;
+    }
 }

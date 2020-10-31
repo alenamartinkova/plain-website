@@ -95,6 +95,10 @@ button {
     width: 170px;
 }
 
+button:hover {
+    filter: invert(1);
+}
+
 .row {
     width: 100%;
     margin: 20px 0;
@@ -304,6 +308,10 @@ footer {
 }
 
 /* NEWS PAGE */
+
+.news-post {
+    margin-bottom: 30px;
+}
 .news-meta {
     padding: 15px 0;
 }
@@ -312,9 +320,20 @@ footer {
     display: inline-block;
 }
 
+.news-meta p {
+    padding: 0 10px 0 3px;
+}
+
+.news-meta img {
+    width: 20px;
+    height: 20px;
+    opacity: .7;
+}
+
 .news-image img {
     width: 100%;
     height: -webkit-fill-available;
+    max-height: 500px;
 }
 
 .news-content {

@@ -81,6 +81,9 @@ h4 {
     font-family: 'Kanit', sans-serif;
 }
 
+h5 {
+    font-size: 17px;
+}
 
 .para-big {
     font-size: 20px;
@@ -96,7 +99,11 @@ button {
 }
 
 button:hover {
-    filter: invert(1);
+    filter: drop-shadow(4px 4px 4px gold);
+}
+
+button.yellow-bg:hover, .yellow-bg button:hover {
+    filter: drop-shadow(4px 4px 4px grey);
 }
 
 .row {
@@ -370,4 +377,20 @@ footer {
     margin-right: 5px;
     vertical-align: initial;
     max-width: 70px;
+}
+
+.tab-btn {
+    width: 137px;
+    border: 1px solid #eeeeee;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.tab-btn.active {
+    filter: invert();
+    border-bottom: 0;
+}
+
+.news-tabs-widget-btn-wrapper {
+    margin-bottom: 20px;
 }

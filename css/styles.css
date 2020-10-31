@@ -1,6 +1,6 @@
 /* LAYOUT  */
 header, main, footer {
-    width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
@@ -10,7 +10,12 @@ header {
     align-items: center;
 }
 
-#footer {
+body {
+    background: url("../images/bg.jpg") repeat-y;
+    backdrop-filter: grayscale(1);
+}
+
+footer {
     background-color: #333333;
 }
 
@@ -26,6 +31,14 @@ a {
 
 .yellow-bg {
     background-color: #FFC600;
+}
+
+.white-bg {
+    background-color: #FFFFFF;
+}
+
+.dark-bg {
+    background-color: #2B2B2B;
 }
 
 .white {
@@ -56,9 +69,11 @@ button {
     border-radius: 4px;
     font-family: 'Kanit', sans-serif;
     font-weight: bold;
+    width: 170px;
 }
 
 .row {
+    width: 100%;
     margin: 20px 0;
 }
 
@@ -66,6 +81,7 @@ button {
 .logo-header {
     padding: 30px;
     max-width: 180px;
+    margin-left: 45px;
 }
 
 /* NAVIGATION */
@@ -87,9 +103,25 @@ button {
     padding: 80px;
 }
 
+#section-first {
+    padding: 90px;
+}
+
+.section-first-content, .section-first-image {
+    width: 40%;
+    display: inline-block;
+}
+
+.section-first-image {
+    background: url(../images/logo-footer-2.png) no-repeat;
+    width: 50%;
+    height: 281px;
+    background-size: 100%;
+}
+
 .section-first-content-text {
     padding: 20px 0;
-    max-width: 300px;
+    max-width: 400px;
 }
 
 .round-image {
@@ -117,12 +149,12 @@ button {
 }
 
 .big-image {
-    width: 230px;
+    max-width: 280px;
 }
 
 .small-image {
     border: 1px solid #eeeeee;
-    max-width: 180px;
+    max-width: 220px;
 }
 
 .images-row {
@@ -167,6 +199,45 @@ button {
     }
 }
 
-.footer-text, .footer-title {
+.footer-first {
+    padding: 20px 20px 0px 90px;
+}
+
+.logo-footer img {
+    max-width: 150px;
+}
+
+footer {
     color: #636363;
+}
+
+.slider-image {
+    max-width: 60px;
+}
+.slider-row .col-md-3 {
+    padding-bottom: 20px;
+    padding-left: 0;
+}
+
+.policy-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 0px 90px;
+}
+
+.policy-first p {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.policy-second img {
+    max-width: 28px;
+    background-color: #959595;
+    padding: 6px;
+    border-radius: 7px;
+}
+
+.policy-second img:hover {
+    filter: invert();
+    cursor: pointer;
 }

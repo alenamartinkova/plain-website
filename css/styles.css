@@ -31,7 +31,7 @@ a:hover {
 }
 
 ul {
-    padding: 0;
+    padding: 0 0 0 20px;
 }
 
 li {
@@ -342,4 +342,32 @@ footer {
 
 .news-btn button {
     width: 200px;
+}
+
+.widget {
+    margin-bottom: 80px;
+}
+
+.widget h4 {
+    margin-bottom: 30px;
+}
+
+.news-search-input input {
+    padding: 4px;
+    border-radius: 4px;
+    border: 1px solid #eeeeee;
+    width: 100%;
+}
+
+.news-post-mini > * {
+    display: inline-block;
+}
+
+.news-post-mini-content {
+    max-width: 200px;
+}
+.mini-image {
+    margin-right: 5px;
+    vertical-align: initial;
+    max-width: 70px;
 }

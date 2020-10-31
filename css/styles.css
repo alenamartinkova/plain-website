@@ -373,6 +373,7 @@ footer {
 .news-post-mini-content {
     max-width: 200px;
 }
+
 .mini-image {
     margin-right: 5px;
     vertical-align: initial;
@@ -393,4 +394,30 @@ footer {
 
 .news-tabs-widget-btn-wrapper {
     margin-bottom: 20px;
+}
+
+.accordion-content {
+    display: none;
+    margin-left: 20px;
+}
+
+.accordion {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.accordion:hover {
+    color: #FFC600!important;
+}
+
+.accordion:before {
+    content: '+';
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+}
+
+.accordion.active:before {
+    content: '-';
+    vertical-align: revert;
 }

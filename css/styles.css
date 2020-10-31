@@ -28,6 +28,7 @@ a {
 
 a:hover {
     color: #FFC600;
+    text-decoration: none;
 }
 
 ul {
@@ -180,6 +181,7 @@ button.yellow-bg:hover, .yellow-bg button:hover {
 
 .black-and-white-image:hover {
     filter: none;
+    box-shadow: 3px 3px 3px #eeeeee;
 }
 
 .big-image {
@@ -270,6 +272,11 @@ footer {
     background-color: #959595;
     padding: 6px;
     border-radius: 7px;
+}
+
+
+.policy-second img:hover, .contact-social img:hover {
+    box-shadow: 2px 2px 2px cornflowerblue;
 }
 
 .policy-second img:hover, .contact-social img:hover {

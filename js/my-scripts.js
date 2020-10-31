@@ -52,3 +52,14 @@ $(document).ready(function() {
     }
 })
 
+function validateEmail(mail) {
+    var mailFormat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    if(mail.value.match(mailFormat)) {
+        return true;
+    }
+    else {
+        alert("You have entered an invalid email address!");
+        document.form.email.focus();
+        return false;
+    }
+}

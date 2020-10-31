@@ -21,7 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="17729c92-4b40-4899-a6f8-9998d6529c4c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news.html" beforeDir="false" afterPath="$PROJECT_DIR$/news.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/my-scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/my-scripts.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,13 +81,13 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="418" y="200" width="604" height="548" key="find.popup" timestamp="1604167350907">
+    <state x="418" y="213" width="604" height="548" key="find.popup" timestamp="1604168881206">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="418" y="200" width="604" height="548" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1604167350907" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1604166088024">
+    <state x="418" y="213" width="604" height="548" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1604168881206" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1604168555821">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1604166088024" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1604168555821" />
   </component>
 </project>

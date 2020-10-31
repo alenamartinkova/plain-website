@@ -11,7 +11,7 @@ header {
 }
 
 body {
-    background: url("../images/bg.jpg") repeat-y;
+    background: url("../images/bg.jpg") repeat;
     backdrop-filter: grayscale(1);
 }
 
@@ -27,6 +27,10 @@ p, a {
 a {
     text-decoration: none;
     color: black;
+}
+
+a:hover {
+    color: #FFC600;
 }
 
 .yellow-bg {
@@ -61,6 +65,10 @@ h3 {
     font-family: 'Kanit', sans-serif;
     font-size: 23px;
     margin-bottom: 0px;
+}
+
+.para-big {
+    font-size: 20px;
 }
 
 button {
@@ -98,7 +106,7 @@ button {
     color: #000000;
 }
 
-/* CONTENT */
+/* CONTENT HP */
 .section {
     padding: 80px;
 }
@@ -199,6 +207,7 @@ button {
     }
 }
 
+/* FOOTER */
 .footer-first {
     padding: 20px 20px 0px 90px;
 }
@@ -230,14 +239,51 @@ footer {
     padding: 0 20px;
 }
 
-.policy-second img {
+.policy-second img, .contact-social img {
     max-width: 28px;
     background-color: #959595;
     padding: 6px;
     border-radius: 7px;
 }
 
-.policy-second img:hover {
+.policy-second img:hover, .contact-social img:hover {
     filter: invert();
     cursor: pointer;
+}
+
+/* CONTACT PAGE */
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+.section-map {
+    padding: 0;
+}
+
+.contact-info h3, .contact-content h3 {
+    margin-bottom: 10px;
+}
+
+.contact-social img {
+    display: inline-block;
+}
+
+.form-row, .form-btn {
+    padding: 10px;
+    display: block;
+}
+
+.form-row label, .form-row input, .form-row textarea {
+    font-family: 'Kanit', sans-serif;
+    display: block;
+}
+
+.form-row label {
+    font-weight: bold;
+}
+
+.form-row textarea {
+    width: 100%;
+    height: 100px;
 }

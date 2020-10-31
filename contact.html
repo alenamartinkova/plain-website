@@ -3,11 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>VIA PROJECT B | Contact</title>
+    <!-- jQuery -->
     <script src="js/jquery-3.5.1.min.js"></script>
+    <!-- font -->
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- lightbox -->
     <script src="js/lightbox.js"></script>
     <link rel="stylesheet" href="css/lightbox.css">
+    <!-- map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCs5QegkdZIEOEUkQaf_MCWWvVyeevSLPA&callback=initMap&libraries=&v=weekly" defer></script>
+    <!-- my scripts and styles -->
     <script src="js/my-scripts.js"></script>
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -15,14 +22,14 @@
     <!-- HEADER -->
     <header id="header" class="white-bg">
         <div class="logo-wrapper">
-            <img class="logo-header" src="images/logo.png" alt="logo">
+            <a href="index.html"><img class="logo-header" src="images/logo.png" alt="logo"></a>
         </div>
         <div class="nav-wrapper">
             <nav id="nav">
                 <ul class="nav-items-wrapper">
                     <li class="nav-item"><a class="grey" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="grey" href="#"> Training</a></li>
-                    <li class="nav-item"><a class="grey" href="#">Jedi News</a></li>
+                    <li class="nav-item"><a class="grey" href="news.html">Jedi News</a></li>
                     <li class="nav-item"><a class="grey" href="#">Jedi Profile</a></li>
                     <li class="nav-item"><a class="grey" href="contact.html">Contact Jedi</a></li>
                     <li class="nav-item"><a class="grey" href="#">Fight Now</a></li>
@@ -32,7 +39,93 @@
     </header>
     <!-- /HEADER -->
     <!-- MAIN -->
-    <main id="main">
+    <main id="contact">
+        <!-- SECTION FIRST -->
+        <section class="section yellow-bg">
+            <div>
+                <h1><strong>Above all, we believe</strong></h1>
+                <p class="white para-big">in the order</p>
+            </div>
+        </section>
+        <!-- /SECTION FIRST -->
+        <!-- SECTION SECOND MAP -->
+        <section class="section section-map">
+            <div id="map"></div>
+        </section>
+        <!-- /SECTION SECOND MAP -->
+
+        <!-- SECTION THIRD FORM -->
+        <section class="section white-bg">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="contact-content">
+                        <h3>Let's keep in touch with our Jedis</h3>
+                        <p>
+                            Darth hutt vader wookiee mandalorians k-3po watto.
+                            Qui-gon skywalker coruscant darth jinn mara.
+                            Dagobah moff kashyyyk mustafar. Mace obi-wan greedo
+                            yavin tusken raider dantooine darth. Organa hutt
+                            calamari mandalorians hutt. Bothan mon calrissian darth
+                            grievous maul. Obi-wan leia alderaan mon mothma owen
+                            han. Darth skywalker r2-d2 jawa sidious hoth. Solo
+                            dooku windu solo dooku. Ben palpatine mon chewbacca
+                            anakin solo kessel.
+                        </p>
+                    </div>
+
+                    <div class="contact-form">
+                        <form class="form">
+                            <div class="form-row">
+                                <label for="name">Name</label>
+                                <input name="name"
+                                       id="name"
+                                       class="form-input"
+                                       type="text">
+                            </div>
+
+                            <div class="form-row">
+                                <label for="email">Email</label>
+                                <input name="email"
+                                       id="email"
+                                       class="form-input"
+                                       type="email">
+                            </div>
+
+                            <div class="form-row">
+                                <label for="message">Message</label>
+                                <textarea name="message"
+                                       id="message"
+                                       class="form-input"
+                                       type="text">
+                                </textarea>
+                            </div>
+
+                            <div class="form-btn">
+                                <button class="yellow-bg white">
+                                    Send to Jedis
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="contact-info">
+                        <h3>Contact Info</h3>
+                        <p>4200 Tatooine, <br>Onk Jemal, Tozeur</p>
+                        <p><strong>Phone:</strong> 0123456789</p>
+                        <p><strong>Mail:</strong> <a href="mailto:alena.martinkova.st@vsb.cz">alena.martinkova.st@vsb.cz</a></p>
+                    </div>
+
+                    <div class="contact-social">
+                        <a href="https://linkedin.com/in/alena-martinkova/" target="_blank"><img src="images/linkedin.jpg"></a>
+                        <a href="https://facebook.com/martinkova.a" target="_blank"><img src="images/facebook.png"></a>
+                        <a href="https://instagram.com/alenka_martinka" target="_blank"><img src="images/instagram.png"></a>
+                        <a href="https://twitter.com/a__martinkova" target="_blank"><img src="images/twitter.png" style="max-width: 29px;"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /SECTION THIRD FORM -->
     </main>
     <!-- FOOTER -->
     <footer id="footer">

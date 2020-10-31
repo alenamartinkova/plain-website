@@ -13,6 +13,7 @@ header {
 body {
     background: url("../images/bg.jpg") repeat;
     backdrop-filter: grayscale(1);
+    font-family: Arial;
 }
 
 footer {
@@ -20,10 +21,6 @@ footer {
 }
 
 /* BASE */
-p, a {
-    font-family: Arial;
-}
-
 a {
     text-decoration: none;
     color: black;
@@ -31,6 +28,14 @@ a {
 
 a:hover {
     color: #FFC600;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
 }
 
 .yellow-bg {
@@ -61,11 +66,21 @@ h1 {
     line-height: 60px;
 }
 
+h2 {
+    font-family: 'Kanit', sans-serif;
+}
+
 h3 {
     font-family: 'Kanit', sans-serif;
     font-size: 23px;
     margin-bottom: 0px;
 }
+
+h4 {
+    font-weight: bold;
+    font-family: 'Kanit', sans-serif;
+}
+
 
 .para-big {
     font-size: 20px;
@@ -286,4 +301,26 @@ footer {
 .form-row textarea {
     width: 100%;
     height: 100px;
+}
+
+/* NEWS PAGE */
+.news-meta {
+    padding: 15px 0;
+}
+
+.news-meta > * {
+    display: inline-block;
+}
+
+.news-image img {
+    width: 100%;
+    height: -webkit-fill-available;
+}
+
+.news-content {
+    padding: 15px 0;
+}
+
+.news-btn button {
+    width: 200px;
 }

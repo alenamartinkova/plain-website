@@ -428,3 +428,7 @@ footer {
     content: '-';
     vertical-align: revert;
 }
+
+.news-detail .news-image img {
+    max-height: 600px;
+}

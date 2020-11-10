@@ -2,12 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>VIA PROJECT B</title>
+    <title>VIA PROJECT B | NEWS DETAIL</title>
+    <!-- jQuery -->
     <script src="js/jquery-3.5.1.min.js"></script>
+    <!-- font -->
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- lightbox -->
     <script src="js/lightbox.js"></script>
     <link rel="stylesheet" href="css/lightbox.css">
+    <!-- my scripts and styles -->
     <script src="js/my-scripts.js"></script>
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -32,133 +37,72 @@
     </header>
     <!-- /HEADER -->
     <!-- MAIN -->
-    <main id="main">
+    <main id="news-detail">
+        <!-- POST -->
         <!-- SECTION FIRST -->
-        <section id="section-first" class="yellow-bg section">
-            <div class="section-first-content">
-                <div class="section-first-content-title">
-                    <h1><strong>May the force<br>be with you</strong></h1>
-                </div>
-
-                <div class="section-first-content-text">
-                    <p class="white">
-                        Lucas ipsum dolor sit amet dooku mandalorians moff
-                        moff jinn c-3p0 k-3po coruscant windu solo.
-                    </p>
-                </div>
-
-                <div class="section-first-content-btn">
-                    <button>Fight Now</button>
-                </div>
+        <section class="section yellow-bg">
+            <div>
+                <h1><strong>Star wars</strong></h1>
+                <p class="white para-big">rule this world</p>
             </div>
-            <div class="section-first-image"></div>
         </section>
-        <!-- /SECTION FIRST -->
-
-        <!-- SECTION SECOND -->
-        <section id="section-second" class="section white-bg">
-            <div class="row">
-                <div class="col-4">
-                    <div class="section-second-content">
-                        <div class="section-second-content-title-wrapper">
-                            <div class="section-second-content-title-image">
-                                <img class="round-image" src="images/star-wars.jpg" alt="first-img">
-                            </div>
-
-                            <div class="section-second-content-title">
-                                <h3>A New Hope</h3>
-                            </div>
+        <section class="section white-bg">
+            <div class="row news-detail">
+                <div class="col-12">
+                    <!-- POST 1 -->
+                    <div class="news-post">
+                        <h2><strong>Skywalker alderaan chewbacca tusken</strong></h2>
+                        <div class="news-meta">
+                            <img src="images/clock.png" alt="clock"><p class="news-date grey">October 31st, 2020</p>
+                            <img src="images/person.png" alt="person"><p class="news-author grey">By Jedi Master</p>
+                            <img src="images/tag.png" alt="tag"><p class="news-tags grey">Jedi, Order, Star Wars</p>
+                            <img src="images/comment.png" alt="comment"><p class="news-comments grey"> 42 Comments</p>
                         </div>
-                        <div class="section-second-content-text">
-                            <p class="grey">
-                                Ponda skywalker solo c-3p0 mon watto yavin yavin.
-                                Sith cade hoth grievous.
-                                Ackbar fett ben hutt kessel obi-wan yoda.
+
+                        <div class="news-image">
+                            <img class="black-and-white-image" src="images/bg.jpg" alt="post-img">
+                        </div>
+                        <div class="news-content">
+                            <p>
+                                Moff obi-wan darth lando ponda amidala utapau.
+                                Obi-wan leia mon k-3po wedge wookiee. Jabba
+                                solo r2-d2 yavin calamari calamari hutt solo.
+                                Antilles darth jar skywalker gonk palpatine.
+                                Skywalker hoth hutt sidious calrissian calamari
+                                lobot dagobah jawa. Jawa obi-wan mon organa darth
+                                coruscant. Skywalker jabba ventress c-3p0. Solo
+                                dantooine jawa organa k-3po qui-gonn anakin. Solo
+                                kenobi biggs skywalker. Hutt grievous ben yoda skywalker
+                                jade binks cade darth. Moff obi-wan darth lando ponda amidala utapau.
+                                Obi-wan leia mon k-3po wedge wookiee. Jabba
+                                solo r2-d2 yavin calamari calamari hutt solo.
+                                Antilles darth jar skywalker gonk palpatine.
+                                Skywalker hoth hutt sidious calrissian calamari
+                                lobot dagobah jawa. Jawa obi-wan mon organa darth
+                                coruscant. Skywalker jabba ventress c-3p0. Solo
+                                dantooine jawa organa k-3po qui-gonn anakin. Solo
+                                kenobi biggs skywalker. Hutt grievous ben yoda skywalker
+                                jade binks cade darth.
                             </p>
                         </div>
                     </div>
-                </div>
-                <div class="col-4">
-                    <div class="section-second-content">
-                        <div class="section-second-content-title-wrapper">
-                            <div class="section-second-content-title-image">
-                                <img class="round-image" src="images/star-wars-circle-drawings.jpg" alt="second-img">
-                            </div>
-                            <div class="section-second-content-title">
-                                <h3>The Empire Strikes Back</h3>
-                            </div>
-                        </div>
-                        <div class="section-second-content-text">
-                            <p class="grey">
-                                Boba kit maul grievous skywalker. Mon bothan
-                                leia jabba jinn. Coruscant qui-gon dooku lando yoda
-                                wedge.
-                            </p>
-                        </div>
+                    <hr>
+                    <div class="form-row">
+                        <label for="comment">Comment</label>
+                        <textarea name="comment"
+                                  id="comment"
+                                  class="form-input"
+                                  type="text"></textarea>
                     </div>
-                </div>
-                <div class="col-4">
-                    <div class="section-second-content">
-                        <div class="section-second-content-title-wrapper">
-                            <div class="section-second-content-title-image">
-                                <img class="round-image" src="images/death-star.png" alt="third-img">
-                            </div>
-                            <div class="section-second-content-title">
-                                <h3>Return of The Jedi</h3>
-                            </div>
-                        </div>
-                        <div class="section-second-content-text">
-                            <p class="grey">
-                                Chewbacca jawa jinn solo lobot dantooine fett
-                                leia. Skywalker han darth moff lars moff organa.
-                                Tatooine mothma obi-wan luke.
-                            </p>
-                        </div>
+                    <div class="form-btn">
+                        <button type="submit" onclick="alert('Thank you!')" class="yellow-bg white">
+                            Send to Jedis
+                        </button>
                     </div>
-                </div>
-            </div>
-
-            <div class="row images-row">
-                <div class="col-3">
-                    <img src="images/darth-vader.jpeg" class="black-and-white-image big-image" alt="darth-vader">
-                </div>
-
-                <div class="col-3">
-                    <img src="images/star-wars-logo.jpg" class="black-and-white-image big-image" alt="star-wars">
-                </div>
-
-                <div class="col-3">
-                    <img src="images/stormtrooper.jpeg" class="black-and-white-image big-image" alt="stormtrooper">
-                </div>
-
-                <div class="col-3">
-                    <img src="images/star-wars-fallen-order.jpg" class="black-and-white-image big-image" alt="star-wars-game">
-                </div>
-            </div>
-
-            <div class="row sponsors-row">
-                <div class="col-md-15">
-                    <img src="images/random-logo.svg" class="black-and-white-image small-image" alt="random">
-                </div>
-
-                <div class="col-md-15">
-                    <img src="images/random-logo.svg" class="black-and-white-image small-image" alt="random">
-                </div>
-
-                <div class="col-md-15">
-                    <img src="images/random-logo.svg" class="black-and-white-image small-image" alt="random">
-                </div>
-
-                <div class="col-md-15">
-                    <img src="images/random-logo.svg" class="black-and-white-image small-image" alt="random">
-                </div>
-
-                <div class="col-md-15">
-                    <img src="images/random-logo.svg" class="black-and-white-image small-image" alt="random">
                 </div>
             </div>
         </section>
-        <!-- /SECTION SECOND -->
+        <!-- /POST -->
     </main>
     <!-- /MAIN -->
     <!-- FOOTER -->
@@ -242,7 +186,6 @@
                         <div class="col-md-3">
                             <a href="images/star-wars-fallen-order.jpg" data-lightbox="show-1" data-title="game"><img src="images/star-wars-fallen-order.jpg" class="black-and-white-image slider-image" alt="alternative explanation"></a>
                         </div>
-
                     </div>
                 </div>
             </div>

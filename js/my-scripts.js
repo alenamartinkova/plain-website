@@ -13,22 +13,18 @@ function initMap() {
 }
 
 function changeTab(evt, widgetSelected) {
-    // Declare all variables
     var i, tabcontent, tabbtns;
 
-    // Get all elements with class="tab-content" and hide them
     tabcontent = document.getElementsByClassName("tab-content");
     for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
     }
 
-    // Get all elements with class="tab-btn" and remove the class "active"
     tabbtns = document.getElementsByClassName("tab-btn");
     for (i = 0; i < tabbtns.length; i++) {
         tabbtns[i].className = tabbtns[i].className.replace(" active", "");
     }
 
-    // Show the current tab, and add an "active" class to the button that opened the tab
     document.getElementById(widgetSelected).style.display = "block";
     evt.currentTarget.className += " active";
 }
@@ -41,7 +37,6 @@ $(document).ready(function() {
         acc[i].addEventListener("click", function() {
             this.classList.toggle("active");
 
-            /* Toggle between hiding and showing the active panel */
             var content = this.nextElementSibling;
             if (content.style.display === "block") {
                 content.style.display = "none";
@@ -50,6 +45,28 @@ $(document).ready(function() {
             }
         });
     }
+
+    // Set the date we're counting down to, in interval
+    var countDownDate = new Date("Dec 24, 2020 20:20:20").getTime();
+
+    var x = setInterval(function() {
+        var now = new Date().getTime();
+
+        var distance = countDownDate - now;
+
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("counter").innerHTML = days + "d " + hours + "h "
+            + minutes + "m " + seconds + "s ";
+
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("counter").innerHTML = "DONE";
+        }
+    }, 1000);
 })
 
 function validateEmail(mail) {

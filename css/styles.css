@@ -4,7 +4,7 @@ header, main, footer {
     margin: 0 auto;
 }
 
-header {
+.nav-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -124,9 +124,66 @@ button.yellow-bg:hover, .yellow-bg button:hover {
     margin: 0 50px 0 0;
 }
 
-.nav-item {
-    display: inline-block;
-    padding-left: 35px;
+.nav-wrapper {
+    width: 100%;
+}
+
+.hamburger {
+    color: black;
+    font-weight: bolder;
+    display: none;
+    zoom: 185%;
+}
+
+@media all and (min-width: 960px) {
+    .nav-item {
+        display: inline-block;
+        padding-left: 35px;
+    }
+}
+
+@media screen and (max-width: 959px) {
+    nav ul {
+        display: none;
+    }
+
+    #nav-div.openNav {
+        width: 100%;
+        position: absolute;
+        background: black;
+        opacity: .8;
+        top: 0;
+    }
+
+    #nav-div.openNav .hamburger {
+        position: absolute;
+        right: 0;
+        top: 7px;
+        color: white;
+        opacity: .8;
+    }
+
+    .nav-wrapper .hamburger {
+        float: right;
+        display: block;
+        padding: 12px;
+        position: relative;
+        zoom: 185%;
+    }
+
+    nav.openNav {
+        margin: 35px 0;
+    }
+
+    nav.openNav ul {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+
+    nav.openNav li {
+        padding: 9px 0;
+    }
 }
 
 .nav-item a:hover {
@@ -152,6 +209,12 @@ button.yellow-bg:hover, .yellow-bg button:hover {
     width: 50%;
     height: 281px;
     background-size: 100%;
+}
+
+@media screen and (max-width: 959px) {
+    .section-first-image {
+        margin-left: 50px;
+    }
 }
 
 .section-first-content-text {
@@ -197,6 +260,10 @@ button.yellow-bg:hover, .yellow-bg button:hover {
     margin-top: 80px;
 }
 
+.images-row  .col-lg-3 {
+    text-align: center;
+}
+
 .sponsors-row {
     margin-top: 80px;
 }
@@ -237,7 +304,7 @@ button.yellow-bg:hover, .yellow-bg button:hover {
 
 /* FOOTER */
 .footer-first {
-    padding: 20px 20px 0px 90px;
+    padding: 20px 20px 0px 20px;
 }
 
 .logo-footer img {
@@ -254,12 +321,28 @@ footer {
 .slider-row .col-md-3 {
     padding-bottom: 20px;
     padding-left: 0;
+    text-align: center;
 }
 
 .policy-row {
     display: flex;
     justify-content: space-between;
-    padding: 20px 20px 0px 90px;
+    padding: 20px 20px 0px 20px;
+}
+
+@media (max-width: 850px) {
+    .policy-row {
+        display: block;
+        padding-bottom: 20px;
+    }
+
+    .policy-second, .policy-first {
+        text-align: center;
+    }
+
+    .policy-second a {
+        padding: 0 15px;
+    }
 }
 
 .policy-first p {

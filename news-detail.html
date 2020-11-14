@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
     <title>VIA PROJECT B | NEWS DETAIL</title>
     <!-- jQuery -->
     <script src="js/jquery-3.5.1.min.js"></script>
@@ -19,20 +20,23 @@
 <body>
     <!-- HEADER -->
     <header id="header" class="white-bg">
-        <div class="logo-wrapper">
-            <a href="index.html"><img class="logo-header" src="images/logo.png" alt="logo"></a>
-        </div>
         <div class="nav-wrapper">
-            <nav id="nav">
-                <ul class="nav-items-wrapper">
-                    <li class="nav-item"><a class="grey" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="grey" href="#"> Training</a></li>
-                    <li class="nav-item"><a class="grey" href="news.html">Jedi News</a></li>
-                    <li class="nav-item"><a class="grey" href="#">Jedi Profile</a></li>
-                    <li class="nav-item"><a class="grey" href="contact.html">Contact Jedi</a></li>
-                    <li class="nav-item"><a class="grey" href="#">Fight Now</a></li>
-                </ul>
-            </nav>
+            <div class="logo-wrapper">
+                <a href="index.html"><img class="logo-header" src="images/logo.png" alt="logo"></a>
+            </div>
+            <div id="nav-div">
+                <nav id="nav">
+                    <ul class="nav-items-wrapper">
+                        <li class="nav-item"><a class="grey" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="grey" href="#"> Training</a></li>
+                        <li class="nav-item"><a class="grey" href="news.html">Jedi News</a></li>
+                        <li class="nav-item"><a class="grey" href="#">Jedi Profile</a></li>
+                        <li class="nav-item"><a class="grey" href="contact.html">Contact Jedi</a></li>
+                        <li class="nav-item"><a class="grey" href="#">Fight Now</a></li>
+                    </ul>
+                </nav>
+                <a class="hamburger">☰</a>
+            </div>
         </div>
     </header>
     <!-- /HEADER -->
@@ -108,30 +112,11 @@
     <!-- FOOTER -->
     <footer id="footer">
         <div class="footer-first">
-            <div class="row" style="align-items: flex-end">
-                <div class="col-md-3 col-sm-6 col-12">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6 col-12">
                     <div class="logo-footer">
                         <img src="images/logo-footer-2.png" alt="logo">
                     </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-12">
-                    <div class="footer-content-title">
-                        <h4>The Phantom Menace</h4>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-12">
-                    <div class="footer-content-title">
-                        <h4>Attack of The Clones</h4>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-12">
-                    <div class="footer-content-title">
-                        <h4>Revenge of The Sith</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3 col-sm-6 col-12">
                     <div class="footer-content-text">
                         <p>
                             Droid windu wicket qui-gon organa watto coruscant boba hutt.
@@ -141,11 +126,19 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6 col-12">
-                    Christmas time:
-                    <strong><p id="counter"></p></strong>
+                <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="footer-content-title">
+                        <h4>The Phantom Menace</h4>
+                    </div>
+                    <div>
+                        Christmas time:
+                        <strong><p id="counter"></p></strong>
+                    </div>
                 </div>
-                <div class="col-md-3 col-sm-6 col-12">
+                <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="footer-content-title">
+                        <h4>Attack of The Clones</h4>
+                    </div>
                     <div class="footer-content-text">
                         <p>
                             <strong>Moff organa calrissian vader darth. </strong>
@@ -157,38 +150,43 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6 col-12">
+                <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="footer-content-title">
+                        <h4>Revenge of The Sith</h4>
+                    </div>
                     <div class="row slider-row">
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-6">
                             <a href="images/darth-vader.jpeg" data-lightbox="show-1" data-title="darth-vader"><img src="images/darth-vader.jpeg" class="black-and-white-image slider-image" alt="alternative explanation"></a>
                         </div>
 
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-6">
                             <a href="images/star-wars-logo.jpg" data-lightbox="show-1" data-title="star-wars"><img src="images/star-wars-logo.jpg" class="black-and-white-image slider-image" alt="alternative explanation"></a>
                         </div>
 
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-6">
                             <a href="images/stormtrooper.jpeg" data-lightbox="show-1" data-title="stormtrooper"><img src="images/stormtrooper.jpeg" class="black-and-white-image slider-image" alt="alternative explanation"></a>
                         </div>
 
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-6">
                             <a href="images/star-wars-fallen-order.jpg" data-lightbox="show-1" data-title="game"><img src="images/star-wars-fallen-order.jpg" class="black-and-white-image slider-image" alt="alternative explanation"></a>
                         </div>
 
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-6">
                             <a href="images/darth-vader.jpeg" data-lightbox="show-1" data-title="darth-vader"><img src="images/darth-vader.jpeg" class="black-and-white-image slider-image" alt="alternative explanation"></a>
                         </div>
 
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-6">
                             <a href="images/star-wars-logo.jpg" data-lightbox="show-1" data-title="star-wars"><img src="images/star-wars-logo.jpg" class="black-and-white-image slider-image" alt="alternative explanation"></a>
                         </div>
-                        <div class="col-md-3">
+
+                        <div class="col-md-3 col-6">
                             <a href="images/stormtrooper.jpeg" data-lightbox="show-1" data-title="stormtrooper"><img src="images/stormtrooper.jpeg" class="black-and-white-image slider-image" alt="alternative explanation"></a>
                         </div>
 
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-6">
                             <a href="images/star-wars-fallen-order.jpg" data-lightbox="show-1" data-title="game"><img src="images/star-wars-fallen-order.jpg" class="black-and-white-image slider-image" alt="alternative explanation"></a>
                         </div>
+
                     </div>
                 </div>
             </div>

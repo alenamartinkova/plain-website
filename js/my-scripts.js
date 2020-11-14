@@ -67,6 +67,19 @@ $(document).ready(function() {
             document.getElementById("counter").innerHTML = "DONE";
         }
     }, 1000);
+
+    var nav = document.getElementsByTagName("nav")[0];
+    var navDiv = $("#nav-div")[0];
+    function toggleNav() {
+        if (nav.className === "") {
+            nav.className = "openNav";
+            navDiv.className = "openNav";
+        } else {
+            nav.className = "";
+            navDiv.className = "";
+        }
+    }
+    document.querySelector(".hamburger").addEventListener("click", toggleNav);
 })
 
 function validateEmail(mail) {

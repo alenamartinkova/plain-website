@@ -152,7 +152,7 @@ button.yellow-bg:hover, .yellow-bg button:hover {
         width: 100%;
         position: absolute;
         background: black;
-        opacity: .8;
+        opacity: .9;
         top: 0;
     }
 
@@ -161,7 +161,7 @@ button.yellow-bg:hover, .yellow-bg button:hover {
         right: 0;
         top: 7px;
         color: white;
-        opacity: .8;
+        opacity: .9;
     }
 
     .nav-wrapper .hamburger {

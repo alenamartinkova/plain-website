@@ -1,1 +1,1 @@
-via-project-b
+School project. Just plain static website based on template.
